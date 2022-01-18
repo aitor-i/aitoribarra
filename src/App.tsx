@@ -1,10 +1,12 @@
 import React, { Fragment, useState } from "react";
 
+import { FiSun, FiMoon } from "react-icons/fi";
+
 import "./reset.css";
 import { theme, lightTheme } from "./themes";
 import { ThemeProvider } from "styled-components";
 
-import Wrapper from "./App.styled";
+import Wrapper, { StyledThemeButton } from "./App.styled";
 
 function App() {
   const [isLightTheme, setIsLightTheme] = useState<boolean>(false);
@@ -13,11 +15,12 @@ function App() {
     <Fragment>
       <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
         <Wrapper>
-          <div className="button">
-            <button
-              onClick={() => setIsLightTheme((prevState) => !prevState)}
-            />
-          </div>
+          <StyledThemeButton
+            onClick={() => setIsLightTheme((prevState) => !prevState)}
+          >
+            {isLightTheme ? <FiMoon /> : <FiSun />}
+          </StyledThemeButton>
+
           <div className="container">
             <div className="title">
               <div className="title__name">Aitor</div>

@@ -25,4 +25,21 @@ const Wrapper = styled.div`
   }
 `;
 
+export const StyledThemeButton = styled.div`
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  top: 30px;
+  right: 50px;
+
+  &:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease-in;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
 export default Wrapper;
