@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  background-color: #282c34;
-  color: #f2f2f2;
+  background-color: ${(props) => props.theme.backgroundColor};
+  color: ${(props) => props.theme.primaryColor};
   width: 100vw;
   height: 100vh;
   .container {
@@ -13,15 +13,15 @@ const Wrapper = styled.div`
   }
   .title {
     display: flex;
-    font-size: 3rem;
+    font-size: ${(props) => props.theme.titleSize};
     gap: 20px;
     justify-content: center;
+    border-bottom: solid ${(props) => props.theme.primaryColor} 2px;
+    padding-bottom: 2px;
   }
 
   .subtitle {
-    border-bottom: solid #f2f2f2 2px;
-    padding-bottom: 2px;
-    font-size: 1.5rem;
+    font-size: ${(props) => props.theme.subtitleSize};
   }
 `;
 
