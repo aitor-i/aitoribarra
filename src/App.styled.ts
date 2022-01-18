@@ -30,7 +30,7 @@ export const StyledThemeButton = styled.div`
   height: 10px;
   position: fixed;
   top: 30px;
-  right: 50px;
+  right: 60px;
 
   &:active {
     transform: scale(0.97);

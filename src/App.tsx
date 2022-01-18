@@ -18,7 +18,11 @@ function App() {
           <StyledThemeButton
             onClick={() => setIsLightTheme((prevState) => !prevState)}
           >
-            {isLightTheme ? <FiMoon /> : <FiSun />}
+            {isLightTheme ? (
+              <FiMoon size={"1.5rem"} />
+            ) : (
+              <FiSun size={"1.5rem"} />
+            )}
           </StyledThemeButton>
 
           <div className="container">
