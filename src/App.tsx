@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import "./reset.css";
 import { theme, lightTheme } from "./themes";
@@ -7,10 +7,17 @@ import { ThemeProvider } from "styled-components";
 import Wrapper from "./App.styled";
 
 function App() {
+  const [isLightTheme, setIsLightTheme] = useState<boolean>(false);
+
   return (
     <Fragment>
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
         <Wrapper>
+          <div className="button">
+            <button
+              onClick={() => setIsLightTheme((prevState) => !prevState)}
+            />
+          </div>
           <div className="container">
             <div className="title">
               <div className="title__name">Aitor</div>
