@@ -2,6 +2,8 @@ import React, { Fragment, useState } from "react";
 
 import { FiSun, FiMoon } from "react-icons/fi";
 
+import Footer from "./components/Footer/";
+
 import "./reset.css";
 import { theme, lightTheme } from "./themes";
 import { ThemeProvider } from "styled-components";
@@ -19,9 +21,9 @@ function App() {
             onClick={() => setIsLightTheme((prevState) => !prevState)}
           >
             {isLightTheme ? (
-              <FiMoon size={"1.5rem"} />
-            ) : (
               <FiSun size={"1.5rem"} />
+            ) : (
+              <FiMoon size={"1.5rem"} />
             )}
           </StyledThemeButton>
 
@@ -32,6 +34,7 @@ function App() {
             </div>
             <div className="subtitle">Developer, Chemist & Photographer</div>
           </div>
+          <Footer theme={isLightTheme ? lightTheme : theme} />
         </Wrapper>
       </ThemeProvider>
     </Fragment>
