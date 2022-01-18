@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import "./reset.css";
-import { theme } from "./theme";
+import { theme, lightTheme } from "./themes";
 import { ThemeProvider } from "styled-components";
 
 import Wrapper from "./App.styled";
@@ -9,7 +9,7 @@ import Wrapper from "./App.styled";
 function App() {
   return (
     <Fragment>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={lightTheme}>
         <Wrapper>
           <div className="container">
             <div className="title">

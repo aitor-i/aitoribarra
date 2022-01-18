@@ -15,3 +15,12 @@ export const theme: ThemeType = {
   subtitleSize: "1.5rem",
   textSize: "1rem",
 };
+
+export const lightTheme: ThemeType = {
+  primaryColor: "#212121",
+  backgroundColor: "#f2f2f2",
+  secondaryColor: "#61dafb",
+  titleSize: "3rem",
+  subtitleSize: "1.5rem",
+  textSize: "1rem",
+};
