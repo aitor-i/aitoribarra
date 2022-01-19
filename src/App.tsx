@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 
 import { FiSun, FiMoon } from "react-icons/fi";
 
@@ -11,8 +11,13 @@ import { ThemeProvider } from "styled-components";
 import Wrapper, { StyledThemeButton } from "./App.styled";
 
 function App() {
-  const [isLightTheme, setIsLightTheme] = useState<boolean>(false);
-
+  const [isLightTheme, setIsLightTheme] = useState<Boolean>(
+    () => window.localStorage.getItem("isLightTheme") === "true" || false
+  );
+  useEffect(() => {
+    window.localStorage.setItem("isLightTheme", isLightTheme.toString());
+    console.log(window.localStorage.getItem("isLightTheme"));
+  }, [isLightTheme]);
   return (
     <Fragment>
       <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
