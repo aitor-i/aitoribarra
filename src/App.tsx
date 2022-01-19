@@ -16,7 +16,6 @@ function App() {
   );
   useEffect(() => {
     window.localStorage.setItem("isLightTheme", isLightTheme.toString());
-    console.log(window.localStorage.getItem("isLightTheme"));
   }, [isLightTheme]);
   return (
     <Fragment>
