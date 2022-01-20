@@ -17,6 +17,14 @@ const StyledFooter = styled.div`
 
     &:hover {
       opacity: 1;
+      color: blue;
+    }
+  }
+  .react-icons {
+    color: ${(props) => props.theme.primaryColor};
+    &:hover {
+      color: ${(props) => props.theme.secondaryColor};
+      opacity: 1;
     }
   }
 `;
