@@ -10,7 +10,7 @@ export interface ThemeType {
 export const theme: ThemeType = {
   primaryColor: "#f2f2f2",
   backgroundColor: "#282c34",
-  secondaryColor: "#61dafb",
+  secondaryColor: "#ffcc00",
   titleSize: "3rem",
   subtitleSize: "1.5rem",
   textSize: "1rem",
@@ -19,7 +19,7 @@ export const theme: ThemeType = {
 export const lightTheme: ThemeType = {
   primaryColor: "#212121",
   backgroundColor: "#f2f2f2",
-  secondaryColor: "#61dafb",
+  secondaryColor: "#002bd8",
   titleSize: "3rem",
   subtitleSize: "1.5rem",
   textSize: "1rem",

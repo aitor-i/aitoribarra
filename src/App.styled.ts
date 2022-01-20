@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   }
   .title {
     display: flex;
+    color: ${(props) => props.theme.secondaryColor};
     font-size: ${(props) => props.theme.titleSize};
     gap: 20px;
     justify-content: center;
