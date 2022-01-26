@@ -18,8 +18,8 @@ export const theme: ThemeType = {
 
 export const lightTheme: ThemeType = {
   primaryColor: "#212121",
-  backgroundColor: "#f2f2f2",
-  secondaryColor: "#002bd8",
+  backgroundColor: "#fofofo",
+  secondaryColor: "#7684a7",
   titleSize: "3rem",
   subtitleSize: "1.5rem",
   textSize: "1rem",
