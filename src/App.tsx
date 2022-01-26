@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 
 import { FiSun, FiMoon } from "react-icons/fi";
 
-import Footer from "./components/Footer/";
+import Footer from "./components/SocialMedia";
 
 import "./reset.css";
 import { theme, lightTheme } from "./themes";
