@@ -1,14 +1,13 @@
 import React, { Fragment, useState, useEffect } from "react";
 
-import { FiSun, FiMoon } from "react-icons/fi";
-
 import SocialMedia from "./components/SocialMedia";
+import ThemeButton from "./components/ThemeButton";
 
 import "./reset.css";
 import { theme, lightTheme } from "./themes";
 import { ThemeProvider } from "styled-components";
 
-import Wrapper, { StyledThemeButton } from "./App.styled";
+import Wrapper from "./App.styled";
 
 function App() {
   const [isLightTheme, setIsLightTheme] = useState<Boolean>(
@@ -21,7 +20,10 @@ function App() {
     <Fragment>
       <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
         <Wrapper>
-          {ThemeButton(setIsLightTheme, isLightTheme)}
+          <ThemeButton
+            setIsLightTheme={setIsLightTheme}
+            isLightTheme={isLightTheme}
+          />
 
           <div className="container">
             <div className="title">
@@ -38,15 +40,3 @@ function App() {
 }
 
 export default App;
-const ThemeButton = (
-  setIsLightTheme: React.Dispatch<React.SetStateAction<Boolean>>,
-  isLightTheme: Boolean
-) => {
-  return (
-    <StyledThemeButton
-      onClick={() => setIsLightTheme((prevState) => !prevState)}
-    >
-      {isLightTheme ? <FiSun size={"1.5rem"} /> : <FiMoon size={"1.5rem"} />}
-    </StyledThemeButton>
-  );
-};

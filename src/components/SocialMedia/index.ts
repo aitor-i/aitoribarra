@@ -1,3 +1,3 @@
-import Footer from "./SocialMedia";
+import SocialMedia from "./SocialMedia";
 
-export default Footer;
+export default SocialMedia;
