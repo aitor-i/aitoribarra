@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 
 import { FiSun, FiMoon } from "react-icons/fi";
 
-import Footer from "./components/SocialMedia";
+import SocialMedia from "./components/SocialMedia";
 
 import "./reset.css";
 import { theme, lightTheme } from "./themes";
@@ -21,24 +21,16 @@ function App() {
     <Fragment>
       <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
         <Wrapper>
-          <StyledThemeButton
-            onClick={() => setIsLightTheme((prevState) => !prevState)}
-          >
-            {isLightTheme ? (
-              <FiSun size={"1.5rem"} />
-            ) : (
-              <FiMoon size={"1.5rem"} />
-            )}
-          </StyledThemeButton>
+          {ThemeButton(setIsLightTheme, isLightTheme)}
 
           <div className="container">
             <div className="title">
-              <div className="title__name">Aitor</div>
-              <div className="title__surname">Ibarra</div>
+              <h1 className="title__name">Aitor</h1>
+              <h1 className="title__surname">Ibarra</h1>
             </div>
-            <div className="subtitle">Developer, Chemist & Photographer</div>
+            <h2 className="subtitle">Developer, Chemist & Photographer</h2>
           </div>
-          <Footer theme={isLightTheme ? lightTheme : theme} />
+          <SocialMedia theme={isLightTheme ? lightTheme : theme} />
         </Wrapper>
       </ThemeProvider>
     </Fragment>
@@ -46,3 +38,15 @@ function App() {
 }
 
 export default App;
+const ThemeButton = (
+  setIsLightTheme: React.Dispatch<React.SetStateAction<Boolean>>,
+  isLightTheme: Boolean
+) => {
+  return (
+    <StyledThemeButton
+      onClick={() => setIsLightTheme((prevState) => !prevState)}
+    >
+      {isLightTheme ? <FiSun size={"1.5rem"} /> : <FiMoon size={"1.5rem"} />}
+    </StyledThemeButton>
+  );
+};

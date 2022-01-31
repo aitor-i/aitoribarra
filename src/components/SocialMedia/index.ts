@@ -1,3 +1,3 @@
-import Footer from "./Footer";
+import Footer from "./SocialMedia";
 
 export default Footer;
