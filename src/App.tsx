@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import SocialMedia from "./components/SocialMedia";
 import ThemeButton from "./components/ThemeButton";
@@ -20,6 +21,10 @@ function App() {
     <Fragment>
       <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
         <Wrapper>
+          <nav>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+          </nav>
           <ThemeButton
             setIsLightTheme={setIsLightTheme}
             isLightTheme={isLightTheme}
