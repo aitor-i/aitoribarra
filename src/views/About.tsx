@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect, useState } from "react";
 
 import { ThemeProvider } from "styled-components";
-import { theme, lightTheme } from "./themes";
+import { theme, lightTheme } from "../themes";
 
-import NavBar from "./components/NavBar";
-import ThemeButton from "./components/ThemeButton";
+import NavBar from "../components/NavBar";
+import ThemeButton from "../components/ThemeButton";
 
 const About = () => {
   const [isLightTheme, setIsLightTheme] = useState<Boolean>(
