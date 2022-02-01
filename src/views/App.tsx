@@ -1,14 +1,14 @@
 import React, { Fragment, useState, useEffect } from "react";
 
-import SocialMedia from "./components/SocialMedia";
-import ThemeButton from "./components/ThemeButton";
+import SocialMedia from "./../components/SocialMedia";
+import ThemeButton from "./../components/ThemeButton";
 
-import "./reset.css";
-import { theme, lightTheme } from "./themes";
+import "./../reset.css";
+import { theme, lightTheme } from "./../themes";
 import { ThemeProvider } from "styled-components";
 
 import Wrapper from "./App.styled";
-import NavBar from "./components/NavBar";
+import NavBar from "./../components/NavBar";
 
 function App() {
   const [isLightTheme, setIsLightTheme] = useState<Boolean>(

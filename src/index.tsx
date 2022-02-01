@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+
+import App from "./views/App";
+import About from "./views/About";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./views/About";
 
 ReactDOM.render(
   <React.StrictMode>
