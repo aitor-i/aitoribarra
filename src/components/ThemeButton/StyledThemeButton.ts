@@ -6,6 +6,7 @@ export const StyledThemeButton = styled.div`
   position: fixed;
   top: 30px;
   right: 60px;
+  z-index: 150;
   cursor: pointer;
   &:active {
     transform: scale(0.97);
