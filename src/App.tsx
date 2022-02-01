@@ -1,5 +1,4 @@
 import React, { Fragment, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import SocialMedia from "./components/SocialMedia";
 import ThemeButton from "./components/ThemeButton";
@@ -9,6 +8,7 @@ import { theme, lightTheme } from "./themes";
 import { ThemeProvider } from "styled-components";
 
 import Wrapper from "./App.styled";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [isLightTheme, setIsLightTheme] = useState<Boolean>(
@@ -20,11 +20,8 @@ function App() {
   return (
     <Fragment>
       <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
+        <NavBar />
         <Wrapper>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
           <ThemeButton
             setIsLightTheme={setIsLightTheme}
             isLightTheme={isLightTheme}
