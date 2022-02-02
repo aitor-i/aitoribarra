@@ -3,7 +3,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import SocialMedia from "../../components/SocialMedia";
 import ThemeButton from "../../components/ThemeButton";
 
-import "./../reset.css";
+import "./../../reset.css";
 import { theme, lightTheme } from "../../themes";
 import { ThemeProvider } from "styled-components";
 
