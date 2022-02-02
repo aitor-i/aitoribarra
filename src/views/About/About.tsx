@@ -4,7 +4,7 @@ import GlobalStyles from "../../GlobalStyles.styles";
 import { ThemeProvider } from "styled-components";
 import { theme, lightTheme } from "../../themes";
 import Wrapper from "./About.styles";
-import StyledParagraph from "../Paragraph.styles";
+import StyledParagraph from "../../styles/Paragraph.styles";
 
 import NavBar from "../../components/NavBar";
 import ThemeButton from "../../components/ThemeButton";
