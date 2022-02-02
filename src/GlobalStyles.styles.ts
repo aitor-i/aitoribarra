@@ -8,7 +8,11 @@ interface props {
 const GlobalStyles = createGlobalStyle`
 body{
     background-color: ${(props: props) => props.theme.backgroundColor};
-   
+    
+  }
+  html{
+  overflow-x: hidden;
+
 }
 `;
 

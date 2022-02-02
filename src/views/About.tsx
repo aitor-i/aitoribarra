@@ -22,19 +22,17 @@ const About = () => {
         <Wrapper>
           <NavBar />
           <GlobalStyles />
-          <div className="container1">
-            <ThemeButton
-              isLightTheme={isLightTheme}
-              setIsLightTheme={setIsLightTheme}
-            />
-            <StyledParagraph>
-              <div className="container">
-                {dummyText()}
-                {dummyText()}
-                {dummyText()}
-              </div>
-            </StyledParagraph>
-          </div>
+          <ThemeButton
+            isLightTheme={isLightTheme}
+            setIsLightTheme={setIsLightTheme}
+          />
+          <StyledParagraph>
+            <div className="container">
+              {dummyText()}
+              {dummyText()}
+              {dummyText()}
+            </div>
+          </StyledParagraph>
         </Wrapper>
       </ThemeProvider>
     </Fragment>

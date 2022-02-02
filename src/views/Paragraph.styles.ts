@@ -12,6 +12,7 @@ const StyledParagraph = styled.div`
     text-align: justify;
 
     color: ${(props) => props.theme.primaryColor};
+    padding-bottom: 10vh;
   }
   p {
     padding: 0 20vw;
