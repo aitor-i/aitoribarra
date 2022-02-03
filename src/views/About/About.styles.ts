@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  .text-container {
-    /* margin-bottom: 20vh; */
+  .about-image {
+    height: 40vh;
+    overflow: hidden;
+  }
+  img {
+    position: relative;
+    width: 100vw;
   }
 `;
 

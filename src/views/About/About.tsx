@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { theme, lightTheme } from "../../themes";
 import Wrapper from "./About.styles";
 import StyledParagraph from "../../styles/Paragraph.styles";
+import aboutImg from "./about.jpg";
 
 import NavBar from "../../components/NavBar";
 import ThemeButton from "../../components/ThemeButton";
@@ -26,6 +27,9 @@ const About = () => {
             isLightTheme={isLightTheme}
             setIsLightTheme={setIsLightTheme}
           />
+          <div className="about-image">
+            <img src={aboutImg} alt="" />
+          </div>
           <StyledParagraph>
             <div className="container">
               {dummyText()}
