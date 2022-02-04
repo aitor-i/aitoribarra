@@ -8,7 +8,6 @@ import StyledParagraph from "../../styles/Paragraph.styles";
 import aboutImg from "./../../media/img/about.jpg";
 
 import NavBar from "../../components/NavBar";
-import ThemeButton from "../../components/ThemeButton";
 
 const About = () => {
   const [isLightTheme, setIsLightTheme] = useState<Boolean>(
