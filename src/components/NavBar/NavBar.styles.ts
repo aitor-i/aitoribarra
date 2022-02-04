@@ -27,6 +27,25 @@ const Wrapper = styled.div`
       color: ${(props) => props.theme.secondaryColor};
     }
   }
+
+  .container-small {
+    &_button {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      visibility: hidden;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .container-small {
+      visibility: hidden;
+    }
+  }
 `;
 
 export default Wrapper;
