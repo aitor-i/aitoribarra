@@ -33,6 +33,21 @@ const Wrapper = styled.div`
       position: fixed;
       top: 24px;
       right: 24px;
+      cursor: pointer;
+      z-index: 150;
+    }
+    &_elements {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around;
+      background-color: black;
+      height: 100vh;
+      width: 70vw;
+      z-index: 100;
+      position: fixed;
+      top: 0;
+      right: 0;
     }
   }
 

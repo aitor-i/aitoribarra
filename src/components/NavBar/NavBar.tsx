@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import Wrapper from "./NavBar.styles";
 
 import { FaHamburger } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-import ThemeButton from "../ThemeButton";
+import NavElements from "./NavElements";
 
 interface Props {
   setIsLightTheme: React.Dispatch<React.SetStateAction<Boolean>>;
@@ -17,11 +16,9 @@ const NavBar: React.FC<Props> = ({ setIsLightTheme, isLightTheme }) => {
   return (
     <Wrapper>
       <div className="container">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <ThemeButton
-          isLightTheme={isLightTheme}
+        <NavElements
           setIsLightTheme={setIsLightTheme}
+          isLightTheme={isLightTheme}
         />
       </div>
 
@@ -36,6 +33,17 @@ const NavBar: React.FC<Props> = ({ setIsLightTheme, isLightTheme }) => {
             <FaHamburger size={"1.5rem"} />
           )}
         </div>
+
+        {isOpen ? (
+          <div className="container-small_elements">
+            <NavElements
+              setIsLightTheme={setIsLightTheme}
+              isLightTheme={isLightTheme}
+            />
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
     </Wrapper>
   );

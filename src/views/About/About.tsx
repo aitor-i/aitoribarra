@@ -27,10 +27,7 @@ const About = () => {
           />
 
           <GlobalStyles />
-          <ThemeButton
-            isLightTheme={isLightTheme}
-            setIsLightTheme={setIsLightTheme}
-          />
+
           <div className="about-image">
             <img src={aboutImg} alt="" />
           </div>
