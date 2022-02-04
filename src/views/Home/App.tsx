@@ -1,7 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 
 import SocialMedia from "../../components/SocialMedia";
-import ThemeButton from "../../components/ThemeButton";
 
 import "./../../reset.css";
 import { theme, lightTheme } from "../../themes";
@@ -20,13 +19,8 @@ function App() {
   return (
     <Fragment>
       <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
-        <NavBar />
+        <NavBar setIsLightTheme={setIsLightTheme} isLightTheme={isLightTheme} />
         <Wrapper>
-          <ThemeButton
-            setIsLightTheme={setIsLightTheme}
-            isLightTheme={isLightTheme}
-          />
-
           <div className="container">
             <div className="title">
               <h1 className="title__name">Aitor</h1>

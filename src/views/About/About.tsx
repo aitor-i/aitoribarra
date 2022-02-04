@@ -21,7 +21,11 @@ const About = () => {
     <Fragment>
       <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
         <Wrapper>
-          <NavBar />
+          <NavBar
+            setIsLightTheme={setIsLightTheme}
+            isLightTheme={isLightTheme}
+          />
+
           <GlobalStyles />
           <ThemeButton
             isLightTheme={isLightTheme}
