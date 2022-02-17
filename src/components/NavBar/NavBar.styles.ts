@@ -21,7 +21,6 @@ const Wrapper = styled.div`
       transition: transform 0.1s ease-in;
       color: ${(props) => props.theme.secondaryColor};
     }
-
     &:hover {
       opacity: 1;
       color: ${(props) => props.theme.secondaryColor};
@@ -29,6 +28,9 @@ const Wrapper = styled.div`
   }
 
   .container-small {
+    a {
+      color: #020202;
+    }
     &_button {
       position: fixed;
       top: 24px;
@@ -37,11 +39,16 @@ const Wrapper = styled.div`
       z-index: 150;
     }
     &_elements {
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 10px 0 0 10px;
+      backdrop-filter: blur(2px);
+
       display: flex;
       flex-direction: column;
       text-align: center;
       justify-content: space-around;
-      background-color: black;
+
       height: 100vh;
       width: 70vw;
       z-index: 100;
