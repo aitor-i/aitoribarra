@@ -4,7 +4,7 @@ import GlobalStyles from "../../GlobalStyles.styles";
 import { ThemeProvider } from "styled-components";
 import { theme, lightTheme } from "../../themes";
 import Wrapper from "./About.styles";
-import StyledParagraph from "../../styles/Paragraph.styles";
+import TabView from "../../components/TabView/TabView";
 import aboutImg from "./../../media/img/about.jpg";
 
 import NavBar from "../../components/NavBar";
@@ -20,23 +20,22 @@ const About = () => {
     <Fragment>
       <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
         <Wrapper>
+          <GlobalStyles />
           <NavBar
             setIsLightTheme={setIsLightTheme}
             isLightTheme={isLightTheme}
           />
-
-          <GlobalStyles />
-
-          <div className="about-image">
+          {/* <div className="about-image">
             <img src={aboutImg} alt="" />
-          </div>
-          <StyledParagraph>
-            <div className="container">
-              {dummyText()}
-              {dummyText()}
-              {dummyText()}
-            </div>
-          </StyledParagraph>
+          </div> */}
+          <TabView
+            tab1="Developer"
+            text1="I' Developer"
+            tab2="Chemist"
+            text2="I Love chemistry"
+            tab3="Photographer"
+            text3="The best photographer"
+          />
         </Wrapper>
       </ThemeProvider>
     </Fragment>
