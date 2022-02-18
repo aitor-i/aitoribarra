@@ -59,6 +59,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: 700px) {
     .body {
       width: 95%;
+      top: 30vh;
     }
   }
 `;
