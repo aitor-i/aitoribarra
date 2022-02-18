@@ -47,6 +47,7 @@ const Wrapper = styled.div`
     font-size: 1.3rem;
     padding: 20px;
     padding-top: 40px;
+    white-space: pre-line;
   }
   @media screen and (max-width: 700px) {
     .tags {
