@@ -10,20 +10,11 @@ import TabView from "../../components/TabView/TabView";
 import NavBar from "../../components/NavBar";
 
 const About = () => {
-  const [isLightTheme, setIsLightTheme] = useState<Boolean>(
-    () => window.localStorage.getItem("isLightTheme") === "true" || false
-  );
-  useEffect(() => {
-    window.localStorage.setItem("isLightTheme", isLightTheme.toString());
-  }, [isLightTheme]);
   return (
     <Fragment>
-      <ThemeProvider theme={isLightTheme ? lightTheme : theme}>
+      <ThemeProvider theme={theme}>
         <Wrapper>
-          <NavBar
-            setIsLightTheme={setIsLightTheme}
-            isLightTheme={isLightTheme}
-          />
+          <NavBar />
 
           <GlobalStyles />
 

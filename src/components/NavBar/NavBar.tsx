@@ -7,21 +7,13 @@ import { ImCross } from "react-icons/im";
 import NavElements from "./NavElements";
 import { IconContext } from "react-icons";
 
-interface Props {
-  setIsLightTheme: React.Dispatch<React.SetStateAction<Boolean>>;
-  isLightTheme: Boolean;
-}
-
-const NavBar: React.FC<Props> = ({ setIsLightTheme, isLightTheme }) => {
+const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <Wrapper>
       <IconContext.Provider value={{ className: "hamburger-button" }}>
         <div className="container">
-          <NavElements
-            setIsLightTheme={setIsLightTheme}
-            isLightTheme={isLightTheme}
-          />
+          <NavElements />
         </div>
 
         <div className="container-small">
@@ -38,10 +30,7 @@ const NavBar: React.FC<Props> = ({ setIsLightTheme, isLightTheme }) => {
 
           {isOpen ? (
             <div className="container-small_elements">
-              <NavElements
-                setIsLightTheme={setIsLightTheme}
-                isLightTheme={isLightTheme}
-              />
+              <NavElements />
             </div>
           ) : (
             <div></div>
