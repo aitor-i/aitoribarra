@@ -1,7 +1,7 @@
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { IconContext } from "react-icons";
 
-import StyledFooter from "./Footer.styles";
+import StyledFooter from "./SocialMedia.styles";
 
 import { ThemeType } from "../../themes";
 
