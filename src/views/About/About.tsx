@@ -26,7 +26,7 @@ const About = () => {
               tab2="Chemist"
               text2={aboutText.chemist}
               tab3="Photographer"
-              text3="Text3"
+              text3={aboutText.photographer}
             />
           </div>
         </Wrapper>

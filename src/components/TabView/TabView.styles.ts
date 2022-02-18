@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   .text {
     text-align: justify;
     letter-spacing: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 20px;
     padding-top: 40px;
     white-space: pre-line;
