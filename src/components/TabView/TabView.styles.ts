@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   color: ${(props) => props.theme.primaryColor};
 
   .container {
-    position: fixed;
+    position: relative;
     top: 25vh;
     width: 80vw;
 
@@ -25,6 +25,7 @@ const Wrapper = styled.div`
     border-bottom: 2px solid gray;
   }
   h2 {
+    position: relative;
     font-size: 2rem;
     cursor: pointer;
     letter-spacing: 0.4rem;
@@ -34,7 +35,6 @@ const Wrapper = styled.div`
   }
   .tags {
     position: relative;
-    z-index: -100;
     top: 5px;
     display: flex;
     align-items: center;

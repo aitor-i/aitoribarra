@@ -6,14 +6,26 @@ interface props {
 }
 
 const GlobalStyles = createGlobalStyle`
-body{
+  html{
+  height: 100%;
+  overflow-y:auto ;
+  overflow-x: hidden;
   
+  }
+body{
+  height: 100%;
     
   }
-  html{
-  overflow-x: hidden;
-
+#root{
+  height: 100%;
 }
+
+@media screen and (max-width: 700px) {
+   html{
+    height: calc(100% + 25vh);
+
+   }
+  }
 `;
 
 export default GlobalStyles;
