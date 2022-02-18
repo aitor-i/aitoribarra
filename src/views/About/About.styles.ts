@@ -30,6 +30,13 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  .social-media {
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0px;
+    padding: 1rem;
+  }
 `;
 
 export default Wrapper;

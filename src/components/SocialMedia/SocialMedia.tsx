@@ -12,7 +12,7 @@ interface Props {
 const Footer: React.FC<Props> = ({ theme }) => {
   return (
     <StyledFooter>
-      <IconContext.Provider value={{ className: "react-icons" }}>
+      <IconContext.Provider value={{ className: " react-icons  " }}>
         <div className="container">
           <div className="link">
             <a href="https://github.com/aitor-i">

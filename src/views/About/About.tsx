@@ -9,6 +9,7 @@ import TabView from "../../components/TabView/TabView";
 import NavBar from "../../components/NavBar";
 
 import { aboutText } from "../../media/text/aboutText";
+import SocialMedia from "../../components/SocialMedia";
 
 const About = () => {
   return (
@@ -28,6 +29,9 @@ const About = () => {
               tab3="Photographer"
               text3={aboutText.photographer}
             />
+          </div>
+          <div className="social-media">
+            <SocialMedia theme={theme} />
           </div>
         </Wrapper>
       </ThemeProvider>
