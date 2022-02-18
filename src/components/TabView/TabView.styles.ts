@@ -7,8 +7,8 @@ const Wrapper = styled.div`
 
   .container {
     position: relative;
-    top: 25vh;
     width: 80vw;
+    margin-top: 25vh;
 
     background: rgba(255, 255, 255, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
       font-size: 1rem;
     }
     .container {
-      top: 20vh;
+      margin-top: 20vh;
     }
   }
 `;

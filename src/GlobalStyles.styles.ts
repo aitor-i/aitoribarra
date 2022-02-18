@@ -13,16 +13,14 @@ const GlobalStyles = createGlobalStyle`
   
   }
 body{
-  height: 100%;
     
   }
 #root{
-  height: 100%;
 }
 
 @media screen and (max-width: 700px) {
    html{
-    height: calc(100% + 25vh);
+    height: calc(110% + 25vh);
 
    }
   }
