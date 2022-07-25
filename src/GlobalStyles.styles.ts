@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { ThemeType } from "./themes";
 
-interface props {
+interface Props {
   theme: ThemeType;
 }
 
@@ -11,7 +11,9 @@ body{
     
   }
   html{
+    min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: scroll;
 
 }
 `;

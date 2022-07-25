@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     hsl(203deg 30% 26%) 100%
   );
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   .tab-container {
     height: 100%;
