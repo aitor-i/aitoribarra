@@ -1,9 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { ThemeType } from "./themes";
-
-interface Props {
-  theme: ThemeType;
-}
 
 const GlobalStyles = createGlobalStyle`
 body{

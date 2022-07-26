@@ -1,8 +1,8 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
 
 import GlobalStyles from "../../GlobalStyles.styles";
 import { ThemeProvider } from "styled-components";
-import { theme, lightTheme } from "../../themes";
+import { theme } from "../../themes";
 import Wrapper from "./About.styles";
 import TabView from "../../components/TabView/TabView";
 
