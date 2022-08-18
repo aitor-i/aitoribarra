@@ -5,7 +5,7 @@ const Wrapper = styled.div`
     width: 20rem;
     border: 1px solid red;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(0, 0, 0, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
     backdrop-filter: blur(2px);
@@ -21,6 +21,15 @@ const Wrapper = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
     cursor: pointer;
+  }
+
+  .project-name {
+    font-size: 1.7rem;
+    color: ${(props) => props.theme.primaryColor};
+  }
+
+  .project-description {
+    color: ${(props) => props.theme.primaryColor};
   }
 `;
 
