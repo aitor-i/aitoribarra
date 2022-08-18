@@ -1,6 +1,6 @@
-import React from "react";
-
 import NavBar from "../../components/NavBar";
+
+import ibarraPhotoImg from "../../media/img/ibarra-photo.jpg";
 
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../themes";
@@ -12,14 +12,18 @@ const Projects = () => {
       <NavBar />
       <Wrapper>
         <div className="body">
-          <h2>Projects 1</h2>
           <div className="project-container">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-              harum ab repellendus consectetur maxime odio repudiandae a dolore
-              totam, possimus optio tenetur praesentium reprehenderit magnam cum
-              autem doloribus dolorem quasi.
-            </p>
+            <div className="project">
+              <img
+                src={ibarraPhotoImg}
+                alt="ibarra photo web page screenshot"
+                className="project-photo"
+              />
+              <div className="project-name">Ibarra Photo</div>
+              <div className="project-description">
+                MERN stack project for professional photographs sharing{" "}
+              </div>
+            </div>
           </div>
         </div>
       </Wrapper>

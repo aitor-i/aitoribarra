@@ -22,13 +22,35 @@ const Wrapper = styled.div`
   );
   display: flex;
   flex-direction: column;
-  .project-container {
+  .project {
+    width: 20rem;
+    border: 1px solid red;
+    padding: 1rem;
     background: rgba(255, 255, 255, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
     backdrop-filter: blur(2px);
-    padding: 2rem;
-    line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-photo {
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 2rem;
+    cursor: pointer;
+    letter-spacing: 0.4rem;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: ${(props) => props.theme.subtitleSize};
   }
   .body {
     margin: 5rem;
