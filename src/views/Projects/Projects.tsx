@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar";
 
 import ibarraPhotoImg from "../../media/img/ibarra-photo.jpg";
+import Project from "../../components/Project/Project";
 
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../themes";
@@ -13,17 +14,12 @@ const Projects = () => {
       <Wrapper>
         <div className="body">
           <div className="project-container">
-            <div className="project">
-              <img
-                src={ibarraPhotoImg}
-                alt="ibarra photo web page screenshot"
-                className="project-photo"
-              />
-              <div className="project-name">Ibarra Photo</div>
-              <div className="project-description">
-                MERN stack project for professional photographs sharing{" "}
-              </div>
-            </div>
+            <Project
+              image={ibarraPhotoImg}
+              alt="ibarra photo web page screenshot"
+              description="MERN stack project for professional photographs sharing"
+              name="Ibarra Photo"
+            />
           </div>
         </div>
       </Wrapper>
