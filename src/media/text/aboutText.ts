@@ -20,4 +20,8 @@ Furthermore, I am familiar with working with Agile/Scrum and Extreme programming
   I hope that in a recent future I will have enough time and photos to make a proper gallery in this page. So stay tuned.
 
   `,
+
+  frontend: ``,
+  testing: ``,
+  backend: ``,
 };
