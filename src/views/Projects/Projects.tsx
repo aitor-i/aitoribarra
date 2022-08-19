@@ -19,6 +19,8 @@ const Projects = () => {
               alt="ibarra photo web page screenshot"
               description="MERN stack project for professional photographs sharing"
               name="Ibarra Photo"
+              pageLink="https://ibarraphoto.me"
+              repoLink="https://github.com/ibarra-photography"
             />
           </div>
         </div>
