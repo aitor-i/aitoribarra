@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     letter-spacing: 0.3rem;
     text-align: center;
     position: relative;
-    top: 40vh;
+    top: 25vh;
   }
   .title {
     display: flex;

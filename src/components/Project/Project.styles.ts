@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   .project {
-    position: absolute;
+    position: relative;
     width: 20rem;
     border: 1px solid red;
     padding: 1rem;

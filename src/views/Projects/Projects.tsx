@@ -15,6 +15,7 @@ const Projects = () => {
         <div className="body">
           <div className="project-container">
             <Project
+              key={1}
               image={ibarraPhotoImg}
               alt="ibarra photo web page screenshot"
               description="MERN stack project for professional photographs sharing"

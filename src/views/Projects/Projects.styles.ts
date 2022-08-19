@@ -34,6 +34,10 @@ const Wrapper = styled.div`
   .body {
     margin: 5rem;
   }
+  .project-container {
+    position: absolute;
+    top: 25vh;
+  }
 
   width: 100vw;
   min-height: 100vh;
