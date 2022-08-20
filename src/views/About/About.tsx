@@ -22,11 +22,11 @@ const About = () => {
           <div className="tab-container">
             <TabView
               tab1="Frontend"
-              text1={aboutText.developer}
+              text1={aboutText.frontend}
               tab2="Testing"
-              text2={aboutText.chemist}
+              text2={aboutText.testing}
               tab3="Backend"
-              text3={aboutText.photographer}
+              text3={aboutText.backend}
             />
           </div>
         </Wrapper>

@@ -21,7 +21,12 @@ Furthermore, I am familiar with working with Agile/Scrum and Extreme programming
 
   `,
 
-  frontend: ``,
-  testing: ``,
-  backend: ``,
+  frontend: `I have been working as frontend developer since September of 2021, mostly working with react and typescript. And when it refers to styling I worked with styled-components, SASS and module css as well as plain css.
+
+  I also have experience working with React’s framework NextJs, in my personal projects. 
+  `,
+  testing: `Since working with react, I have learned to make automated testing, especially in frontend, with technologies like Jest, Vitest, React Testing Library, and Mock Service Worker.
+
+  I also like working applying TDD methodologies.`,
+  backend: `I consider myself a frontend developer, but I have some experience building rest APIs with Node and Express, ibarraphoto.me is an excellent example of that. Furthermore, I also have some experience working with MongoDB. If you want to know more about ibarraphoto.me visit the projects page. `,
 };
